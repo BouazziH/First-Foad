@@ -161,3 +161,34 @@ foreach ($region as $key => $value) {
 
 echo $z;
 echo '<hr>';
+//*********TABLEAUX MULTI DIMENSIONELLE */
+$tab6 = ['voiture' => 'mercedes', 'nombre' => [1, 2, 3], 'planetes' => ['mars', 'terre']];
+print_r($tab6);
+
+/**************EXERCICE */
+$tt = [];
+$tt[] = ['A', 'B', 'C'];
+$tt[] = ['Q', 'R', 'T'];
+$tt[] = ['E', 'U', 'P', 'I'];
+
+// ECRIRE LE MOT CEPPIC
+echo '<hr>';
+echo ($tt[0][2] . $tt[2][0] . $tt[2][2] . $tt[2][2] . $tt[2][3] . $tt[0][2]);
+echo '<hr>';
+// exe 2
+$tt2 = [[0, 2], [2, [2, 3]]];
+
+echo ($tt2[1][1][1]); // afficher  la valeur 3
+
+/***********exercie4 */
+$produits = [['nom' => 'chaussetes', 'prix' => 10], ['nom' => 'velo', 'prix' => 500], ['nom' => 'carote', 'prix' => 2], ['nom' => 'truc', 'prix' => 9]];
+print_r($produits);
+
+//boucler sur le tableau prosuits en affichant le nom du produit selon le modele :
+// 'nom du poduit' : 'prix' £
+//dans une liste ul , le 'noom du produit' dans un h3 et le prix dans un p
+
+
+
+
+echo '</pre>';
