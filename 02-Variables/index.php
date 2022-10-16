@@ -31,3 +31,12 @@ $dateac=date('Y');
  $age=$dateac-$annee;
 
 echo '<br> votre age est de:'.$age .'ans <br>';
+//incrementation et decrementation
+$num=0;
+$num++;
+echo $num.'<br>';
+$t=10;
+$t--;
+echo "$t <br>";
+
+?>
