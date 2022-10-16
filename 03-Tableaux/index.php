@@ -57,3 +57,38 @@ for ($i = 34; $i <= 78; $i++) {
 }
 
 //print_r($t);// pour afficher le tableau
+
+
+//**********************************************************/
+// tableaux associatifs
+//**********************************************************/
+$fruits = ['banane' => 'jaune', 'pomme' => 'rouge', 'ananas' => 'vertjaune'];
+print_r($fruits);
+echo "la couleur de la pomme est : " . $fruits['pomme'];
+echo '<br>' . "la longeur de tableau fruits est de :" . sizeof($fruits); //sizeof permet de savoir la longeur de tableau
+
+
+$age = ['hamza' => 28, 'sonia' => 52, 'fabien' => 26, 'jose' => 56, 'omar' => 32];
+
+echo '<br>' . sizeof($age) . '<br>';
+$chaine = implode('-', $age); // implode prend les valeurs de tableau et il les separent avec - sous chaine de caractere
+//$ages2 = explode('-',$chaine).'<hr>';//explode va te cree un tableau on separant les valeur la ou il trouve le -
+//print_r($ages2).'<hr>';
+echo $chaine . '<br>';
+//*** pour ajouter d'un element avec ca valeur au tableau 
+$age['hakeem'] = 8; // **********
+//********pour modifier une valeur f
+$age['hakeem'] = 9;
+print_r($age);
+
+foreach ($age as $clef => $value) {
+  echo $clef . ' a ' . $value . ' ans <br>';
+}
+
+
+$html1 = '<ul>';
+foreach ($age as $key => $value) {
+  $html1 .= '<li>' . $key . ' a ' . $value . ' ans </li>';
+}
+$html1 .= '</ul>';
+echo $html1;
