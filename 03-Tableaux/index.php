@@ -49,3 +49,11 @@ foreach ($fruit as $value) {
     //echo $value.'<br>';
 
 }
+//EXECICE
+//construire un tableau a l'aide de la boucle for contenant des nombres de 34 a78;
+$t = [];
+for ($i = 34; $i <= 78; $i++) {
+  array_push($t, $i);
+}
+
+//print_r($t);// pour afficher le tableau
