@@ -33,3 +33,19 @@ $moyenne = ($n1 + $n2 + $n3 + $n4) / 4;
 //echo '<br>'.$moyenne;
 $tab3 = array_merge($tableau2, $tableau, $note); // MERGE assemble plusieurs tableau 
 ////var_dump($tab3);
+// boucle FOR
+for ($i = 0; $i < count($tableau2); $i++) {
+    //echo $tableau2[$i].'<br>';
+}
+
+$fruit = ['banane', 'ananas', 'pomme', 'fraise'];
+$html = ''; // declarer une variable vide
+for ($i = 0; $i < count($fruit); $i++) {
+    $html .= $fruit[$i] . ','; // remplir la variable avec des les valeur de i en concatenation 
+}
+//echo $html;
+
+foreach ($fruit as $value) {
+    //echo $value.'<br>';
+
+}
